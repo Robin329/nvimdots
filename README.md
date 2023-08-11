@@ -116,14 +116,14 @@ It's strongly recommended to read [Wiki: Prerequisites](https://github.com/Robin
 </h3>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/startuptime.png"
+  <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/startuptime.png"
   width = "80%"
   alt = "StartupTime"
   />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/vimstartup.png"
+  <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/vimstartup.png"
   width = "60%"
   alt = "Vim-StartupTime"
   />
@@ -136,43 +136,43 @@ It's strongly recommended to read [Wiki: Prerequisites](https://github.com/Robin
 </h3>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/dashboard.png" alt="Dashboard">
+    <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/dashboard.png" alt="Dashboard">
     <em>Dashboard</em>
 </p>
 <br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/telescope.png" alt="Telescope">
+    <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/telescope.png" alt="Telescope">
     <em>Telescope</em>
 </p>
 <br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/coding.png" alt="Coding">
+    <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/coding.png" alt="Coding">
     <em>Coding</em>
 </p>
 <br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/code_action.png" alt="Code Action">
+    <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/code_action.png" alt="Code Action">
     <em>Code Action</em>
 </p>
 <br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/dap.png" alt="Debugging">
+    <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/dap.png" alt="Debugging">
     <em>Debugging</em>
 </p>
 <br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/lazygit.png" alt="Lazygit">
+    <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/lazygit.png" alt="Lazygit">
     <em>Lazygit with built-in Terminal</em>
 </p>
 <br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/command_ref.png" alt="Command quickref">
+    <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/command_ref.png" alt="Command quickref">
     <em>Command quickref</em>
 </p>
 
@@ -184,7 +184,7 @@ It's strongly recommended to read [Wiki: Prerequisites](https://github.com/Robin
 
 ## ❤️ Thanks to
 
-- [Robin329](https://github.com/Robin329)
+- [ayamir](https://github.com/ayamir)
 - [Jint-lzxy](https://github.com/Jint-lzxy)
 - [CharlesChiuGit](https://github.com/CharlesChiuGit)
 
