@@ -73,7 +73,9 @@ end
 
 local leader_map = function()
 	vim.g.mapleader = " "
+	-- Normal mode
 	vim.api.nvim_set_keymap("n", " ", "", { noremap = true })
+	-- Visual mode
 	vim.api.nvim_set_keymap("x", " ", "", { noremap = true })
 end
 
