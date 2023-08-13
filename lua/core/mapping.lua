@@ -53,6 +53,7 @@ local core_map = {
 	["v|K"] = map_cmd(":m '<-2<CR>gv=gv"):with_desc("edit: Move this line up"),
 	["v|<"] = map_cmd("<gv"):with_desc("edit: Decrease indent"),
 	["v|>"] = map_cmd(">gv"):with_desc("edit: Increase indent"),
+	["v|<leader>F"] = map_cmd("<Cmd>lua vim.lsp.buf.format()<CR>"):with_noremap():with_silent():with_desc("edit: Partially format the document"),
 }
 
 bind.nvim_load_mapping(core_map)

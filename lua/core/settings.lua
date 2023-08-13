@@ -6,7 +6,7 @@ settings["use_ssh"] = false
 
 -- Set it to false if there are no need to format on save.
 ---@type boolean
-settings["format_on_save"] = true
+settings["format_on_save"] = false
 
 -- Set it to false if the notification after formatting is annoying.
 ---@type boolean
@@ -54,7 +54,7 @@ settings["colorscheme"] = "catppuccin"
 
 -- Set it to true if your terminal has transparent background.
 ---@type boolean
-settings["transparent_background"] = false
+settings["transparent_background"] = true
 
 -- Set background color to use here.
 -- Useful if you would like to use a colorscheme that has a light and dark variant like `edge`.
