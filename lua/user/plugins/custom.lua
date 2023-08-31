@@ -3,13 +3,13 @@ local custom = {}
 custom["folke/todo-comments.nvim"] = {
 	lazy = true,
 	event = "BufRead",
-	config = require("custom.todo-comments"), -- Require that config
+	config = require("user.configs.custom.todo-comments"), -- Require that config
 }
 -- vim-mark plugins
 custom["inkarkat/vim-mark"] = {
 	lazy = true,
 	event = "BufRead",
-	config = require("custom.vim-mark"), -- Require that config
+	config = require("user.configs.custom.vim-mark"), -- Require that config
 }
 -- vim-mark plugins dependency
 custom["inkarkat/vim-ingo-library"] = {
@@ -21,7 +21,7 @@ custom["inkarkat/vim-ingo-library"] = {
 custom["christoomey/vim-tmux-navigator"] = {
     lazy = true,
     event = 'BufRead',
-	config = require("custom.vim-tmux-navigator"),
+	config = require("user.configs.custom.vim-tmux-navigator"),
 }
 
 
