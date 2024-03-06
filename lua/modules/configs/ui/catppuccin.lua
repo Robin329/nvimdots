@@ -3,8 +3,7 @@ return function()
 	local clear = {}
 
 	require("modules.utils").load_plugin("catppuccin", {
-		flavour = "mocha", -- Can be one of: latte, frappe, macchiato, mocha
-		background = { light = "latte", dark = "mocha" },
+		background = { light = "latte", dark = "mocha" }, -- latte, frappe, macchiato, mocha
 		dim_inactive = {
 			enabled = false,
 			-- Dim inactive splits/windows/buffers.
@@ -47,18 +46,19 @@ return function()
 					information = { "underline" },
 				},
 			},
-			aerial = false,
+			aerial = true,
 			alpha = false,
 			barbar = false,
 			beacon = false,
 			cmp = true,
 			coc_nvim = false,
-			dap = { enabled = true, enable_ui = true },
+			dap = true,
+			dap_ui = true,
 			dashboard = false,
 			dropbar = { enabled = true, color_mode = true },
 			fern = false,
 			fidget = true,
-			flash = false,
+			flash = true,
 			gitgutter = false,
 			gitsigns = true,
 			harpoon = false,
@@ -85,7 +85,7 @@ return function()
 			rainbow_delimiters = true,
 			sandwich = false,
 			semantic_tokens = true,
-			symbols_outline = true,
+			symbols_outline = false,
 			telekasten = false,
 			telescope = { enabled = true, style = "nvchad" },
 			treesitter_context = true,
@@ -118,8 +118,8 @@ return function()
 					MasonNormal = { link = "NormalFloat" },
 
 					-- For indent-blankline
-					IndentBlanklineChar = { fg = cp.surface0 },
-					IndentBlanklineContextChar = { fg = cp.surface2, style = { "bold" } },
+					IblIndent = { fg = cp.surface0 },
+					IblScope = { fg = cp.surface2, style = { "bold" } },
 
 					-- For nvim-cmp and wilder.nvim
 					Pmenu = { fg = cp.overlay2, bg = transparent_background and cp.none or cp.base },
@@ -136,6 +136,9 @@ return function()
 					-- For fidget
 					FidgetTask = { bg = cp.none, fg = cp.surface2 },
 					FidgetTitle = { fg = cp.blue, style = { "bold" } },
+
+					-- For nvim-notify
+					NotifyBackground = { bg = cp.base },
 
 					-- For nvim-tree
 					NvimTreeRootFolder = { fg = cp.pink },

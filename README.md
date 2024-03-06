@@ -36,7 +36,7 @@
 
 ## 🪷 Introduction
 
-This repo hosts my [NeoVim](https://neovim.io/) configuration for Linux, macOS, and Windows. `init.lua` is the config entry point.
+This repo hosts our [NeoVim](https://neovim.io/) configuration for Linux [(with NixOS support)](#nixos-support), macOS, and Windows. `init.lua` is the config entry point.
 
 Branch info:
 
@@ -50,7 +50,7 @@ Branch info:
 
 </div>
 
-I use [lazy.nvim](https://github.com/folke/lazy.nvim) to manage plugins.
+We currently manage plugins using [lazy.nvim](https://github.com/folke/lazy.nvim).
 
 Chinese introduction is [here](https://zhuanlan.zhihu.com/p/382092667).
 
@@ -101,13 +101,21 @@ It's strongly recommended to read [Wiki: Prerequisites](https://github.com/Robin
 <h3 align="center">
     🔧 Usage & Customization
 </h3>
-<p align="center">Refer to <a href="https://github.com/Robin329/nvimdots/wiki/Usage" rel="nofollow">Wiki: Usage</a></p>
+
+<p align="center">Refer to <a href="https://github.com/Robin329/nvimdots/wiki/Usage" rel="nofollow">Wiki: Usage</a> for details </p>
+<br>
+
+<h3 align="center" id="nixos-support" name="nixos-support">
+    ❄️  NixOS Support
+</h3>
+<p align="center">See <a href="https://github.com/Robin329/nvimdots/wiki/NixOS-Support" rel="nofollow">Wiki: NixOS Support</a> for details</p>
+
 <br>
 
 <h3 align="center">
     🤔 FAQ
 </h3>
-<p align="center">Refer to <a href="https://github.com/Robin329/nvimdots/wiki/Issues" rel="nofollow">Wiki: FAQ</a></p>
+<p align="center">Refer to <a href="https://github.com/Robin329/nvimdots/wiki/Issues" rel="nofollow">Wiki: FAQ</a> for details </p>
 
 ## ✨ Features
 
@@ -116,14 +124,14 @@ It's strongly recommended to read [Wiki: Prerequisites](https://github.com/Robin
 </h3>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/startuptime.png"
+  <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/startuptime.png"
   width = "80%"
   alt = "StartupTime"
   />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/vimstartup.png"
+  <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/vimstartup.png"
   width = "60%"
   alt = "Vim-StartupTime"
   />
@@ -136,43 +144,43 @@ It's strongly recommended to read [Wiki: Prerequisites](https://github.com/Robin
 </h3>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/dashboard.png" alt="Dashboard">
+    <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/dashboard.png" alt="Dashboard">
     <em>Dashboard</em>
 </p>
 <br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/telescope.png" alt="Telescope">
+    <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/telescope.png" alt="Telescope">
     <em>Telescope</em>
 </p>
 <br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/coding.png" alt="Coding">
+    <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/coding.png" alt="Coding">
     <em>Coding</em>
 </p>
 <br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/code_action.png" alt="Code Action">
+    <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/code_action.png" alt="Code Action">
     <em>Code Action</em>
 </p>
 <br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/dap.png" alt="Debugging">
+    <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/dap.png" alt="Debugging">
     <em>Debugging</em>
 </p>
 <br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/lazygit.png" alt="Lazygit">
+    <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/lazygit.png" alt="Lazygit">
     <em>Lazygit with built-in Terminal</em>
 </p>
 <br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/ayamir/blog-imgs/main/command_ref.png" alt="Command quickref">
+    <img src="https://raw.githubusercontent.com/Robin329/blog-imgs/main/command_ref.png" alt="Command quickref">
     <em>Command quickref</em>
 </p>
 
@@ -184,7 +192,7 @@ It's strongly recommended to read [Wiki: Prerequisites](https://github.com/Robin
 
 ## ❤️ Thanks to
 
-- [ayamir](https://github.com/ayamir)
+- [Robin329](https://github.com/Robin329)
 - [Jint-lzxy](https://github.com/Jint-lzxy)
 - [CharlesChiuGit](https://github.com/CharlesChiuGit)
 

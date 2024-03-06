@@ -20,18 +20,24 @@ completion["nvimdev/lspsaga.nvim"] = {
 	config = require("completion.lspsaga"),
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 }
+completion["stevearc/aerial.nvim"] = {
+	lazy = true,
+	event = "LspAttach",
+	config = require("completion.aerial"),
+}
 completion["dnlhc/glance.nvim"] = {
 	lazy = true,
 	event = "LspAttach",
 	config = require("completion.glance"),
 }
-completion["simrat39/symbols-outline.nvim"] = {
+completion["joechrisellis/lsp-format-modifications.nvim"] = {
 	lazy = true,
 	event = "LspAttach",
-	config = require("completion.symbols-outline"),
 }
-completion["jose-elias-alvarez/null-ls.nvim"] = {
+vim.g.nonels_suppress_issue58 = false
+completion["nvimtools/none-ls.nvim"] = {
 	lazy = true,
+	commit = "b4bd764cd1705086de4bd89f7ccf9d9ed0401259",
 	event = { "CursorHold", "CursorHoldI" },
 	config = require("completion.null-ls"),
 	dependencies = {

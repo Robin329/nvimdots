@@ -29,7 +29,7 @@ function Lazy:load_plugins()
 				";%s;%s;%s",
 				modules_dir .. "/configs/?.lua",
 				modules_dir .. "/configs/?/init.lua",
-				user_config_dir
+				user_config_dir .. "/?.lua"
 			)
 	end
 
@@ -64,12 +64,12 @@ end
 
 function Lazy:load_lazy()
 	if not vim.loop.fs_stat(lazy_path) then
-		local lazy_repo = use_ssh and "git@github.com:folke/lazy.nvim.git " or "https://github.com/folke/lazy.nvim.git "
+		local lazy_repo = use_ssh and "https://github.com/folke/lazy.nvim.git "  or "git@github.com:folke/lazy.nvim.git "
 		api.nvim_command("!git clone --filter=blob:none --branch=stable " .. lazy_repo .. lazy_path)
 	end
 	self:load_plugins()
 
-	local clone_prefix = use_ssh and "git@github.com:%s.git" or "https://github.com/%s.git"
+	local clone_prefix = use_ssh and  "https://github.com/%s.git" or  "git@github.com:%s.git"
 	local lazy_settings = {
 		root = data_dir .. "lazy", -- directory where plugins will be installed
 		git = {

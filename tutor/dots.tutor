@@ -22,6 +22,9 @@ The opened buffers are showed at the top, you can use `<A-j>`{normal} and `<A-k>
 switch between them. Also, `<A-n>`{normal}(n meaning No) can be used to switch to the
 target buffer directly.
 
+Note: For macOS, you need to remap your `<Option>`{normal} to `<Alt>`{normal} following the
+instructions in https://github.com/Robin329/nvimdots/issues/344.
+
 You can use `<C-n>`{normal} to open/close file explorer which will appear on the left.
 Now move cursor to the line of **lua** folder, press `o`{normal} to open it, repeat this
 process to **core** folder, then open **event.lua** in new buffer by press `o`{normal} too.
@@ -85,9 +88,9 @@ content in the right window and press enter to open it in buffer.
 Nvimdots also provide other find features. The most commonly used keymap maybe
 `<leader>fr`{normal} if you are used to editing files in different projects. It will
 list files you ever opened and sort them by "frecency" which used in firefox's
-address bar. This feature utilizes "sqlite" to store the key-value pairs of
-file path and its "frecency" value permanently at 
-**~/.local/share/nvim/file_frecency.sqlite3**.
+address bar. This feature uses "Lua Bytecode" to store the key-value pairs of
+file path and its "frecency" value permanently at:
+**~/.local/share/nvim/file_frecency.bin**.
 
 You can press `<leader>fw`{normal} to search word in current work directory. It
 utilizes ripgrep to search and you can use it naturally as you use ripgrep.
@@ -136,7 +139,7 @@ Of course you will be curious about where you can master the rest 40%. And the
 answer relies on the basic nvim motions. We enhanced lots of nvim's default
 abilities that you can use those abilities naturally if you were already an
 experienced nvim user.
-You can also check https://github.com/ayamir/nvimdots/wiki for more!
+You can also check https://github.com/Robin329/nvimdots/wiki for more!
 
 Last but not least, you can press `<C-p>` in noraml mode to call the command
 panel then search for keymaps any time you want!
