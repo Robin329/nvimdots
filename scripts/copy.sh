@@ -2,7 +2,7 @@
 
 
 
-NVIM_SOURCE_BUILD=/data/workspace/neovim
+NVIM_SOURCE_BUILD=~/workspace/project/neovim
 NVIM_CONFIG_DIR=~/.config/nvim
 NVIM_SHARE=~/.local/share/nvim
 

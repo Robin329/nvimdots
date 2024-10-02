@@ -54,23 +54,6 @@ return function()
 		end
 	end
 
-	local mini_sections = {
-		lualine_a = { "filetype" },
-		lualine_b = {},
-		lualine_c = {},
-		lualine_x = {},
-		lualine_y = {},
-		lualine_z = {},
-	}
-	local outline = {
-		sections = mini_sections,
-		filetypes = { "aerial" },
-	}
-	local diffview = {
-		sections = mini_sections,
-		filetypes = { "DiffviewFiles" },
-	}
-
 	local conditionals = {
 		has_enough_room = function()
 			return vim.o.columns > 100
@@ -149,6 +132,7 @@ return function()
 			end,
 			padding = 0,
 			color = utils.gen_hl("surface1", true, true),
+			separator = { left = "", right = "" },
 		},
 
 		file_status = {
@@ -179,8 +163,8 @@ return function()
 
 		lsp = {
 			function()
-				local buf_ft = vim.api.nvim_get_option_value("filetype", { scope = "local" })
-				local clients = vim.lsp.get_active_clients()
+				local buf_ft = vim.bo.filetype
+				local clients = vim.lsp.get_clients({ buffer = vim.api.nvim_get_current_buf() })
 				local lsp_lists = {}
 				local available_servers = {}
 				if next(clients) == nil then
@@ -217,7 +201,7 @@ return function()
 					return venv
 				end
 
-				if vim.api.nvim_get_option_value("filetype", { scope = "local" }) == "python" then
+				if vim.bo.filetype == "python" then
 					local venv = os.getenv("CONDA_DEFAULT_ENV")
 					if venv then
 						return icons.misc.PyEnv .. env_cleanup(venv)
@@ -235,7 +219,7 @@ return function()
 
 		tabwidth = {
 			function()
-				return icons.ui.Tab .. vim.api.nvim_get_option_value("shiftwidth", { scope = "local" })
+				return icons.ui.Tab .. vim.bo.tabstop
 			end,
 			padding = 1,
 		},
@@ -327,6 +311,7 @@ return function()
 			lualine_x = {
 				{
 					"encoding",
+					show_bomb = true,
 					fmt = string.upper,
 					padding = { left = 1 },
 					cond = conditionals.has_enough_room,
@@ -358,14 +343,6 @@ return function()
 			lualine_z = {},
 		},
 		tabline = {},
-		extensions = {
-			"quickfix",
-			"nvim-tree",
-			"nvim-dap-ui",
-			"toggleterm",
-			"fugitive",
-			outline,
-			diffview,
-		},
+		extensions = {},
 	})
 end
